@@ -196,6 +196,67 @@ body {
 .loading-container {
   display: none;
 }
+
+/* service section */
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  padding-top: 30px;
+}
+
+.all-service {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 1px 1px 0 #000000;
+  color: #383838;
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31.4px;
+  border: 1px solid black;
+  padding: 10px 40px;
+  gap: 10px;
+}
+
+.service-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.service-list-card {
+  position: relative;
+}
+
+.design {
+  width: 100%;
+  height: 100%;
+  object-fit: cover bottom;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.service-item {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
 @media screen and (min-width: 576px) {
   .small-search {
     display: none;
@@ -217,6 +278,17 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .service-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .menubar-image {
     display: none;
@@ -268,5 +340,48 @@ body {
   .loading-list-red {
     padding: 16px 12px;
     border-top: 3px solid red;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    margin: 0 100px;
+  }
+  .all-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    margin: 0;
+  }
+  .service-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .design {
+    width: 140px;
+    height: 140px;
+    object-fit: cover bottom;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .service-item {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
   }
 }
