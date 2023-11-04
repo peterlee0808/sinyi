@@ -353,7 +353,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-
   border-bottom: 2px solid #f0f0f0;
 }
 
@@ -464,6 +463,133 @@ header {
   line-height: 20.02px;
   margin: 0 4px;
   text-align: center;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+  margin-top: 80px;
+}
+
+.footer-top-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 10px;
+}
+
+.footer-hot-title {
+  color: #383838;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 16px 4px 16px 0;
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.footer-hot-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-hot-item-container a {
+  color: #383838;
+  display: inline;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 5px 0;
+}
+
+.footer-down-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.footer-down-title {
+  color: #383838;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 4px 0 0;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.footer-detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.tools-continer {
+  display: flex;
+  flex-direction: column;
+}
+
+.divide {
+  padding: 20px 0;
+}
+
+.tools-item {
+  color: #383838;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 5px 0;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #383838;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.contact-detail {
+  color: #383838;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 5px 0;
+}
+
+.footer-logo-image {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-comapny-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.detail {
+  color: #9b9b9b;
+  font-size: 14px;
+  line-height: 16.8px;
+
+  margin: 8px 0 0;
 }
 @media screen and (min-width: 576px) {
   .small-search {
