@@ -122,6 +122,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 /* reset css */
 *,
 *::before,
@@ -298,6 +304,62 @@ body {
   width: 48px;
   height: 48px;
 }
+
+/* open article */
+.open-article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.open-article-title {
+  color: #383838;
+  flex-basis: 33.333%;
+  font-size: 1.75rem;
+  font-family: "san";
+  line-height: 16.8px;
+  padding: 48px 0 0 px;
+  font-family: "San Francisco", Helvetica, Arial, san-serif;
+}
+
+.open-article-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.moving {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.open-card-item-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.open-card-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.open-card-item-content {
+  color: #383838;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 @media screen and (min-width: 576px) {
   .small-search {
     display: none;
@@ -316,6 +378,14 @@ body {
     background-color: #f0f0f0;
     padding: 10px 20px;
     gap: 10px;
+  }
+  .open-article-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .open-article-container {
+    width: 100%;
   }
 }
 
