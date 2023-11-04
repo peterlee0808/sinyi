@@ -139,6 +139,12 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
 }
 
 .header-container {
@@ -482,6 +488,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    overflow: scroll;
   }
   .open-article-container {
     width: 100%;
